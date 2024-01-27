@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style -->
+    <link rel="stylesheet" href="styl.css" />
+    <!-- script -->
+    <title>Modal</title>
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
+      <!-- Modal -->
+      <div class="modal hidden" id="modal">
+        <!-- modal header -->
+        <div class="modal-header">
+          <h5><img src="./BMW.svg.png"> I Love BMW <img src="./BMW.svg.png"></h5>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <h2 class="modal-title">BMW M4</h2>
+          <p>
+            Salom, do'stlar! Bugun siz bilan o'zimning yangi BMW M4-imni
+            tanishtirishni xohlayman. Bu mashina BMW 4 seriyasining eng kuchli
+            va eng chiroyli versiyasi. U 431 ot kuchiga ega va 100 km / soatga
+            4,1 soniyada yetib boradi. Bu mashina sizga har qanday yo'l
+            sharoitida yaxshi boshqarish, oqibatli to'siq va qimmatbaho
+            his-tuyg'ularini ta'minlaydi. Bu mashina odatiy emas, men uni o'zim
+            o'zgartirdim. Uning orqasida katta spoiler, faralari yorug'lik
+            rangda, rangli detallari va boshqa tuning elementlari bor. Ular
+            mashinaga yanada sportiv va zamonaviy ko'rinish beradi.
+          </p>
+          <p>
+            Ushbu oynani yopish uchun burchakdagi ❌ ni yoki EsCape ni bosing ✅
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- overlay -->
+    <div class="overlay hidden" id="overlay"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
